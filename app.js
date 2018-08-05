@@ -1,5 +1,15 @@
 Ext.onReady(function(){
-	alert("안녕");
-	Ext.Msg.alert("타이틀","헬로월드");
-	return;
+	Ext.create("Ext.panel.Panel",{
+		width : 300,
+		height : 300,
+		renderTo : Ext.getBody(),
+		border : true,
+		items: [{
+			xtype : 'textfield'
+		},{
+			xtype : 'button',
+			text : '버튼'
+		}]
+	})
 })
+
