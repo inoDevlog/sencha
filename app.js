@@ -5,33 +5,34 @@ Ext.onReady(function(){
 		border : true,
 		items: [
 			{
-			xtype : 'panel',
-			border : true,
-			flex : 1,
-			region : 'north',
-			layout : 'border',
-			items : [
-				{
-					xtype : 'panel',
-					border : true,
-					flex : 1,
-					region : 'center'
-				},
-				{
-					xtype : 'panel',
-					border : true,
-					flex : 1,
-					region : 'east'
-				}
-			]
+				xtype : 'panel',
+				border : true,
+				flex : 1,
+				region : 'north',
+				layout : 'border',
+				items :
+				[
+					{
+						xtype : 'panel',
+						border : true,
+						flex : 1,
+						region : 'center'
+					},
+					{
+						xtype : 'panel',
+						border : true,
+						flex : 1,
+						region : 'east'
+					}
+				]
 			},
 			{
-			xtype : 'panel',
-			border : true,
-			flex : 1,
-			region : 'center',
+				xtype : 'panel',
+				border : true,
+				flex : 1,
+				region : 'center',
 			}
 		]
-	})
-})
+	});
+});
 
