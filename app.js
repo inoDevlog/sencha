@@ -8,7 +8,7 @@ Ext.onReady(function(){
 				xtype : 'panel',
 				border : true,
 				flex : 1,
-				region : 'north',
+				region : 'north', // north center south east west
 				layout : 'border',
 				items :
 				[
@@ -16,7 +16,7 @@ Ext.onReady(function(){
 						xtype : 'panel',
 						border : true,
 						flex : 1,
-						region : 'center'
+						region : 'west'
 					},
 					{
 						xtype : 'panel',
