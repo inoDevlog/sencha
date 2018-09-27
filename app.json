@@ -513,7 +513,7 @@
      *     "builds": {
      *         "classic": {
      *             "toolkit": "classic",
-     *             "theme": "theme-neptune"
+     *             "theme": "theme-ios"
      *         },
      *
      *         "modern": {
@@ -528,7 +528,7 @@
         "classic": {
             "toolkit": "classic",
             
-            "theme": "theme-gray",
+            "theme": "theme-ios",
             
             "sass": {
                 "generated": {
