@@ -1,7 +1,18 @@
 Ext.onReady(function(){
 	//layout2 : 'center', 'absolute', 'accordion', 'card', 'hbox/vbox'
 	Ext.create("Ext.container.Viewport",{
-		layout : "fit",
+		layout : 'fit',
+		border : true,
+		items : [{
+			xtype : 'panel',
+			title : '부모패널',
+			items : [{
+				
+			}]
+		}]
+	})
+
+/*		layout : "fit",
 		border : true,
 		items :
 		[
@@ -33,7 +44,7 @@ Ext.onReady(function(){
 		 		]
 		 	}
 		]
-	})
+	})*/
 	//layout : 'fit, 'border'
 /*	Ext.create("Ext.container.Viewport",{
 		renderTo : Ext.getBody(),
