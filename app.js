@@ -1,13 +1,19 @@
 Ext.onReady(function(){
+	//layout : 'fit', 'border'
 	//layout2 : 'center', 'absolute', 'accordion', 'card', 'hbox/vbox'
 	Ext.create("Ext.container.Viewport",{
-		layout : 'fit',
+		layout : 'fit', // 웹페이지의 전부를 가득 채운다.
 		border : true,
 		items : [{
 			xtype : 'panel',
 			title : '부모패널',
+			layout : 'vbox',
 			items : [{
-				
+				xtype : 'button',
+				text : '등록'
+			},{
+				xtype : 'button',
+				text : '삭제'
 			}]
 		}]
 	})
