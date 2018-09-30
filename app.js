@@ -1,7 +1,38 @@
 Ext.onReady(function(){
+	// 6강 컴포넌트 속성 설정 및 listeners 이벤트 보는 법
+	Ext.create("Ext.panel.Panel",{
+		width : 500,
+		height : 500,
+		title : '6강 ExtJS 타이틀',
+		renderTo : Ext.getBody(),
+		layout : 'border',
+		items : [{
+			xtype : 'panel',
+			border : true,
+			flex : 1,
+			region : 'west'
+		},{
+			xtype : 'panel',
+			border : true,
+			flex : 2,
+			region : 'center',
+			layout : 'border',
+			items : [{
+				xtype : 'panel',
+				flex : 2,
+				border : true,
+				region : 'center'
+			},{
+				xtype : 'panel',
+				flex : 1,
+				border : true,
+				region : south
+			}]
+		}]
+	})
 	//layout : 'fit', 'border'
 	//layout2 : 'center', 'absolute', 'accordion', 'card', 'hbox/vbox'
-	Ext.create("Ext.container.Viewport",{
+/*	Ext.create("Ext.container.Viewport",{
 		layout : 'fit', // 웹페이지의 전부를 가득 채운다.
 		border : true,
 		items : [{
@@ -17,7 +48,7 @@ Ext.onReady(function(){
 			}]
 		}]
 	})
-
+*/
 /*		layout : "fit",
 		border : true,
 		items :
