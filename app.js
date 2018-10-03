@@ -26,7 +26,12 @@ Ext.onReady(function(){
 				xtype : 'panel',
 				flex : 1,
 				border : true,
-				region : south
+				region : 'south'
+			},{
+				xtype : 'panel',
+				flex : 1,
+				border : true,
+				region : 'east'
 			}]
 		}]
 	})
