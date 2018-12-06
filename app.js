@@ -6,34 +6,41 @@ Ext.onReady(function(){
 		title : '6강 ExtJS 타이틀',
 		renderTo : Ext.getBody(),
 		layout : 'border',
-		items : [{
-			xtype : 'panel',
-			border : true,
-			flex : 1,
-			region : 'west'
-		},{
-			xtype : 'panel',
-			border : true,
-			flex : 2,
-			region : 'center',
-			layout : 'border',
-			items : [{
+		items : [
+			{
 				xtype : 'panel',
+				border : true,
+				flex : 1,
+				region : 'west'
+			},
+			{
+				xtype : 'panel',
+				border : true,
 				flex : 2,
-				border : true,
-				region : 'center'
-			},{
-				xtype : 'panel',
-				flex : 1,
-				border : true,
-				region : 'south'
-			},{
-				xtype : 'panel',
-				flex : 1,
-				border : true,
-				region : 'east'
+				region : 'center',
+				layout : 'border',
+				items : 
+				[
+					{
+						xtype : 'panel',
+						flex : 2,
+						border : true,
+						region : 'center'
+					},
+					{
+						xtype : 'panel',
+						flex : 1,
+						border : true,
+						region : 'south'
+					},
+					{
+						xtype : 'panel',
+						flex : 1,
+						border : true,
+						region : 'east'
+					}
+				]
 			}]
-		}]
 	})
 	//layout : 'fit', 'border'
 	//layout2 : 'center', 'absolute', 'accordion', 'card', 'hbox/vbox'
