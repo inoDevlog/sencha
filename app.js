@@ -6,12 +6,15 @@ Ext.onReady(function(){
 		title : '6강 ExtJS 타이틀',
 		renderTo : Ext.getBody(),
 		layout : 'border',
-		items : [
-			{
+		items : [{
 				xtype : 'panel',
 				border : true,
+				collapsible : true,
 				flex : 1,
-				region : 'west'
+				title : '좌측입니다',
+				region : 'west',
+				split : true,
+				html : '<b>안녕하세요</b>'
 			},
 			{
 				xtype : 'panel',
@@ -25,7 +28,21 @@ Ext.onReady(function(){
 						xtype : 'panel',
 						flex : 2,
 						border : true,
-						region : 'center'
+						region : 'center',
+						layout: 'center',
+						items : [{
+							xtype : 'button',
+							text : '버튼클릭',
+							listeners : {
+								click : function(btn) {
+									alert(btn.getText());
+								}
+							}
+							/*handler : funtion(btn) {
+								alert('버튼 클릭');
+							}*/
+							
+						}]
 					},
 					{
 						xtype : 'panel',
@@ -37,7 +54,8 @@ Ext.onReady(function(){
 						xtype : 'panel',
 						flex : 1,
 						border : true,
-						region : 'east'
+						region : 'east',
+						split : true
 					}
 				]
 			}]
